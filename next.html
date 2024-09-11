@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autism Helper - Video Lesson</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2, #80deea, #4dd0e1);
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: #00897b;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 30px;
+        }
+        h1, h2 {
+            color: #00897b;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background-color: #00897b;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #00695c;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            margin-bottom: 20px;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Autism Helper</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Lessons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Progress</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="mb-4">Understanding Emotions</h1>
+        
+        <div class="video-container">
+            <video controls>
+                <source src="emotions.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <h2>Lesson Overview</h2>
+        <p>In this lesson, you will learn about recognizing and expressing different emotions. Understanding emotions is crucial for improving social interactions and communication skills.</p>
+        
+        <h2>Key Points</h2>
+        <ul>
+            <li>Identifying basic emotions (happiness, sadness, anger, fear)</li>
+            <li>Recognizing facial expressions and body language</li>
+            <li>Understanding the causes of different emotions</li>
+            <li>Learning appropriate ways to express emotions</li>
+        </ul>
+        
+        <div class="mt-4">
+            <a href="#" class="btn btn-primary me-2">Previous Lesson</a>
+            <a href="#" class="btn btn-primary">Next Lesson</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAXShFpPzd8sigi_SY_y8DqaZrdeOSEknM",
+            authDomain: "autismweb-ec095.firebaseapp.com",
+            projectId: "autismweb-ec095",
+            storageBucket: "autismweb-ec095.appspot.com",
+            messagingSenderId: "520547397958",
+            appId: "1:520547397958:web:4934f05b32b17c8e577547",
+            measurementId: "G-CDW8V9381W"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        onAuthStateChanged(auth, (user) => {
+            if (!user) {
+                window.location.href = 'login.html';
+            }
+        });
+    </script>
+</body>
+</html>

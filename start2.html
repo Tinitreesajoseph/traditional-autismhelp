@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autism Helper - Sensory Processing Lesson</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2, #80deea, #4dd0e1);
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: #00897b;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 30px;
+        }
+        h1, h2 {
+            color: #00897b;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background-color: #00897b;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #00695c;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .practice-section {
+            background-color: #e0f2f1;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .sensory-types {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .sensory-type {
+            text-align: center;
+            padding: 15px;
+            background-color: #b2dfdb;
+            border-radius: 10px;
+            width: 30%;
+            margin-bottom: 15px;
+        }
+        .sensory-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Autism Helper</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Lessons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Progress</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" >Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="mb-4">Sensory Processing</h1>
+        
+        <div class="video-container">
+            <video controls>
+                <source src="emotions.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <h2>Lesson Overview</h2>
+        <p>In this lesson, you will learn about sensory processing and develop strategies to manage sensory sensitivities. Understanding your sensory needs can help you navigate daily life more comfortably and confidently.</p>
+        
+        <div class="sensory-types">
+            <div class="sensory-type">
+                <i class="fas fa-eye sensory-icon"></i>
+                <h3>Visual</h3>
+            </div>
+            <div class="sensory-type">
+                <i class="fas fa-ear-listen sensory-icon"></i>
+                <h3>Auditory</h3>
+            </div>
+            <div class="sensory-type">
+                <i class="fas fa-hand-sparkles sensory-icon"></i>
+                <h3>Tactile</h3>
+            </div>
+            <div class="sensory-type">
+                <i class="fas fa-utensils sensory-icon"></i>
+                <h3>Taste</h3>
+            </div>
+            <div class="sensory-type">
+                <i class="fas fa-nose sensory-icon"></i>
+                <h3>Smell</h3>
+            </div>
+            <div class="sensory-type">
+                <i class="fas fa-running sensory-icon"></i>
+                <h3>Proprioception</h3>
+            </div>
+        </div>
+        
+        <h2 class="mt-4">Key Points</h2>
+        <ul>
+            <li>Understanding the different sensory systems and how they interact</li>
+            <li>Recognizing your personal sensory preferences and triggers</li>
+            <li>Developing coping strategies for overwhelming sensory experiences</li>
+            <li>Creating a sensory-friendly environment at home and work/school</li>
+            <li>Communicating your sensory needs to others effectively</li>
+        </ul>
+        
+        <div class="practice-section">
+            <h2>Practice Exercise: Sensory Inventory</h2>
+            <p>Complete this sensory inventory to better understand your sensory preferences:</p>
+            <ol>
+                <li><strong>Visual:</strong> List 3 visual inputs that you find calming and 3 that you find overwhelming.</li>
+                <li><strong>Auditory:</strong> Identify 3 sounds you enjoy and 3 sounds that bother you.</li>
+                <li><strong>Tactile:</strong> Describe 3 textures you like touching and 3 you avoid.</li>
+                <li><strong>Taste/Smell:</strong> Name 3 flavors or scents you love and 3 you dislike.</li>
+                <li><strong>Movement:</strong> List 3 types of movement that make you feel good and 3 that make you uncomfortable.</li>
+            </ol>
+            <p>After completing the inventory, think about strategies you can use to increase positive sensory experiences and minimize negative ones in your daily life.</p>
+        </div>
+        
+        <div class="mt-4">
+            <a href="#" class="btn btn-primary me-2">Previous Lesson</a>
+            <a href="#" class="btn btn-primary">Next Lesson</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAXShFpPzd8sigi_SY_y8DqaZrdeOSEknM",
+            authDomain: "autismweb-ec095.firebaseapp.com",
+            projectId: "autismweb-ec095",
+            storageBucket: "autismweb-ec095.appspot.com",
+            messagingSenderId: "520547397958",
+            appId: "1:520547397958:web:4934f05b32b17c8e577547",
+            measurementId: "G-CDW8V9381W"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        onAuthStateChanged(auth, (user) => {
+            if (!user) {
+                window.location.href = 'login.html';
+            }
+        });
+    </script>
+</body>
+</html>
