@@ -6,12 +6,6 @@ This project provides a traditional approach to helping autistic individuals by 
 
 1. [Project Overview](#project-overview)
 2. [Features](#features)
-3. [Prerequisites](#prerequisites)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Class Categories](#class-categories)
-7. [Contributing](#contributing)
-8. [License](#license)
 
 ## Project Overview
 
